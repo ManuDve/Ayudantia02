@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    all: unset;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+body {
+    background-color: rgb(33, 33, 33);
+    font-family: "Helvetica", sans-serif;
+    gap: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+section, #formulario, #descripcion {
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#formulario, #descripcion {
+    animation: fadeInBottom 500ms backwards 800ms;
+    min-width: 400px;
+    width: 40%;
+    margin-bottom: 3em;
+
+}
+
+#pokemon {
+    animation: fadeInTop 500ms backwards 300ms;
+    width: 100%;
+}
+
+#pokemon .title {
+    width: 100%;
+    text-align: center;
+}
+
+#pokemon img {
+    transition: 300ms;
+    height: 200px;
+    width: auto;
+    -webkit-user-drag: none;
+}
+
+#pokemon img:hover {
+    transform: scale(1.1);
+}
+
+#descripcion {
+    flex-direction: column;
+    justify-content: left;
+    border: 1px solid #dddddd;
+    border-radius: 1em;
+}
+
+#descripcion h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 1rem 0 0.5rem 0;
+}
+
+#descripcion h2 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#descripcion p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#descripcion img {
+    width: 100%;
+    height: auto;
+}
+
+#formulario {
+    border: 1px solid #dddddd;
+    border-radius: 1em;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1em;
+}
+
+#formulario input, textarea, button {
+    width: 100%;
+    padding: 5px;
+}
+
+#formulario input[type="text"], #formulario textarea {
+    border-bottom: 1px solid #dddddd;
+}
+
+#cambiar-nombre {
+    border-bottom: 1px solid white;
+    height: 30px;
+}
+
+#boton {
+    border: 1px solid white;
+    width: 50px;
+    height: 30px;
+}
+
+
+/* @keyframes fadeInTop {
+    0% {opacity: 0; transform: translateY(-600px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInBottom {
+    0% {opacity: 0; transform: translateY(600px);}
+    100% {opacity: 1; transform: translateY(0);}
+} */
